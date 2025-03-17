@@ -23,7 +23,7 @@ form .addEventListener('submit' ,(event) => {
 
    if(email === localemail && password === localpassword){
    
-          location.href = "index.html";}
+          location.href = "game.html";}
 
 
 
