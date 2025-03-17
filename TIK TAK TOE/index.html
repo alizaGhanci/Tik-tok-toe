@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="msg-container hide">
+      <p id="msg"></p>
+
+      <button class="new-game">New Game</button>
+    </div>
+
+    <div class="rightside">
+      <div class="column1">Winners</div>
+    </div>
+    <div class="leftside">
+      <div class="column2">Draw</div>
+    </div>
+
+    <main>
+      <div class="box">
+        <h1>TIC TAC TOE</h1>
+        <div class="container">
+          <div class="board">
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="resetbtn">Reset Game</button>
+            <div class="Winners">
+              <div class="score">
+                <ul id="mylist" style="display: none">
+                  <div class="one">
+                    <a id="win1">Player X wins</a>
+                  </div>
+                  <div class="two">
+                    <a id="win2">Player 0 wins</a>
+                  </div>
+                  <div class="three">
+                    <a id="draw">Draws</a>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

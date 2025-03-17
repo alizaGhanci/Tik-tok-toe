@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: rgb(6, 82, 65);
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+}
+#msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+   width: 50%;
+   height: 500px;
+  color: white;
+  font-size: 5vmin;
+  background-image: url(mesh-813.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+  border: 2px dotted orange;
+  
+}
+.msg-container {
+    
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: rgb(149,118,13);
+  background: linear-gradient(167deg, rgba(149,118,13,1) 0%, rgba(171,116,12,1) 32%, rgba(10,175,145,1) 100%, rgba(7,18,53,1) 100%, rgba(17,59,182,1) 100%, rgba(17,59,182,1) 100%);
+  
+  z-index: 9999999999;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  
+}
+@media (max-width:767px) {
+  #msg{
+
+ 
+ 
+   width: 500px;
+   height: 400px;
+   
+  }
+}
+@media (max-width:549px) {
+  #msg{
+
+ 
+ 
+   width: 350px;
+   height: 400px;
+   
+  }
+}
+.hide{
+  display: none;
+}
+.leftside {
+ display: flex;
+ justify-content: end;
+ align-items: end;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  
+  
+  
+}
+
+
+
+
+.column1{
+  height: 35vmin;
+  width: 35vmin;
+  background-color: orange;
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border-radius: 0 20px 500vmin 20px; /* Simplified border-radius */
+  font-size: 5vmin;
+  font-family: cursive, sans-serif; /* Fallback font */
+  position: relative;
+  top: 0%;
+  
+ 
+}
+.column2 {
+  height: 35vmin;
+  width: 30vmin;
+  background-color: orange;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  font-size: 5vmin;
+  font-family: cursive, sans-serif; /* Fallback font */
+  border-radius: 20px 0 20px 500vmin; 
+  
+  
+}
+.Winners{
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1em;
+  font-weight: bold;
+
+ 
+  
+  
+  
+  
+}
+
+.score{
+  
+  width: 96vw;
+  border: 2px dotted white;
+  background-color: orange;
+  color: white;
+   margin-top: 7vmin;
+
+ 
+
+ 
+  
+
+}
+.one,.two, .three{
+  display: inline-block;
+  border-right: 1px dotted white;
+  width: 30%;
+  min-height: 10vh;
+  max-height:30vh;
+  font-size: 5vmin;
+ 
+}
+
+.three{
+  border: none;
+}
+
+main{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  align-items: start;
+  min-height: 100px;
+  max-height: 100px;
+  
+  
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  max-height: 100px;
+  
+}
+.board {
+  width: 60vmin;
+  height: 20vmin;
+  gap: 1.5vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  
+}
+.btn {
+  width: 18vmin;
+  height: 18vmin;
+  font-size: 10vmin;
+  font-family: cursive;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5);
+  border: none;
+  margin-top: 0.1em;
+}
+h1 {
+  
+  font-size: 5vmin;
+  
+  
+}
+
+.mylist{
+  font-size: 20em;
+}
+
+.new-game{
+
+  padding: 10px 20px;
+  border: none;
+  font-size: 3vmin;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  position: absolute;
+  top: 530px;
+ 
+ 
+ 
+  
+ 
+  
+}
+.resetbtn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 3vmin;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  margin-top: 10px;
+  
+}
+
+.new-game, .resetbtn{
+  background: orange;
+  box-shadow: 0 0 25px orange;
+}
+
+.new-game:hover ,.resetbtn:hover {
+  box-shadow: 0 0 5px orange, 0 0 25px orange, 0 0 50px orange, 0 0 100px orange;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1046px) {
+  
+  
+  
+
+  
+  .box{
+   margin-top: 10vmin; 
+    
+  }
+   .score{
+
+    margin-top: 0px;
+   }
+}
+@media (max-width:765px) {
+  .box{
+    margin-top: 30vmin; 
+     
+   }
+  .score{
+
+    margin-top: 5vmin;
+  }
+}
+@media (max-width:565px) {
+  
+  
+  .box{
+    margin-top: 35vmin; 
+    
+     
+   }
+   .score{
+
+    margin-top: 100px;
+   }
+  
+}
+@media (max-width:400px) {
+  
+  
+  .box{
+    margin-top: 40vmin; 
+    
+     
+   }
+   .score{
+
+    margin-top: 200px;
+   }
+  
+}

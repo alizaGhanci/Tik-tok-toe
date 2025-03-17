@@ -1,0 +1,222 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     background-image: url(mesh.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding-right: 3vw;
+ 
+      
+
+}
+.heading{
+
+    text-align: center;
+}
+
+
+form{
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="Gender"]{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+}
+
+
+.wrapper{
+    position: relative;
+    display: flex;
+    backdrop-filter: blur(-50%);
+    backdrop-filter: blur(5px);
+    height: 520px;
+ 
+    border: 2px solid white;
+
+  
+    
+
+}
+input{
+    color: white;
+}
+
+.wrapper2{
+    position: relative;
+    display: flex;
+    backdrop-filter: blur(-50%);
+    backdrop-filter: blur(5px);
+    height: 750px;
+    border: 2px solid white;
+
+  
+    
+
+}
+label{
+         position:absolute;
+         left: 12px;
+         color: white;
+         font-size: 20px;
+         padding-top: 25px;
+    
+
+}
+i{
+
+    position: absolute;
+    right: 15px;
+    padding-top: 30px;
+    
+    color: white;
+}
+.remember{
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+
+}
+button{
+  
+ 
+   width: 104%;
+   border-radius: 5px;
+   outline: none;
+ 
+   
+}
+.btn{
+
+    background-color: orange;
+    border: none;
+    margin-top: 2em;
+}
+.btn:hover{
+
+    background-color:white;
+    color:rgb(7, 80, 58);
+    transition-duration: 1s;
+}
+input:valid+label,
+input:focus+label
+
+{
+    background-color: white;
+    color: black;
+    transform: translate(10px ,-25px);
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 2px 5px 5px 2px;
+}
+a{
+
+    color:rgb(197, 146, 7);
+    
+    
+}
+.para{
+
+    color: white;
+}
+.signup{
+
+    text-align: center;
+}
+.a{
+    text-align: end;
+    color:rgb(197, 146, 7);
+}
+
+a:hover{
+    color: white;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    outline: none;
+
+    
+}
+
+.center-button {
+    padding: 10px 20px;
+   border-radius: 5px;
+   outline: none;
+   
+}
+.radio1{
+
+    padding-right: 5px;
+    color: white;
+    margin-top: 1.5em;
+}
+.radio2{
+    margin-top: 2em;
+
+}
+select{
+    height: 60px;
+   
+    background-color: transparent;
+    outline: none;
+    border-radius: 10px; 
+    border: 2px solid white;
+    color: white;
+   
+      
+}
+option{
+
+    color: black;
+    font-weight:bolder;
+      
+}
+ 
+
+.error{
+
+    display: none;
+    color: red;
+}
+
+
+
+@media (max-width: 565px) {
+
+.wrapper{
+
+
+     
+    margin-left: 1em;
+}
+.wrapper2{
+
+    margin-left: 1em;
+
+}
+    
+}
