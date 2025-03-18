@@ -43,7 +43,7 @@ btn.forEach((btn) => {
         msg.innerText = "It's a draw! Try again later";
         draw++;
         showwinner(null); // Pass null to indicate a draw
-        updateWinnersList();
+        
       }, 1000);
     }
   });
@@ -75,10 +75,7 @@ let showwinner = (winners) => {
       } else if (winners === "0") {
         win0++;
       }
-      else if (winners === null) {
-        msg.innerText = "It's a draw! Try again later";
-        draw++;
-      }
+      
     }
     msgcontainer.classList.remove("hide"); // Show the message container
     updateWinnersList();

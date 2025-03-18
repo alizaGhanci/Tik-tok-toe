@@ -106,6 +106,6 @@ function resetInput() {
      radio.checked = false;
    })
    gendervalue = "";
-    location.href= "login.html";
+    location.href= "TIK TAK TOE/login.html";
  }
 
