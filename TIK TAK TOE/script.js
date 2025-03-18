@@ -38,19 +38,20 @@ btn.forEach((btn) => {
     let win = countwin();
 
   
-    if (win) {
-      showwinner(win);
-    } else if (count === 9) {
+   
+
+  
+    if (count === 9 && !win) {
       setTimeout(() => {
         msg.innerText = "It's a draw! Try again later";
         draw++;
-        showwinner(null);
+        showwinner(null); // Pass null to indicate a draw
         updateWinnersList();
-  
       }, 1000);
     }
   });
-});
+  });
+
 
 reset.addEventListener("click", () => {
   enablebtn();
@@ -76,6 +77,10 @@ let showwinner = (winners) => {
         winx++;
       } else if (winners === "0") {
         win0++;
+      }
+         else if (winners === null) {
+        msg.innerText = "It's a draw! Try again later";
+        draw++;
       }
     }
     msgcontainer.classList.remove("hide"); // Show the message container
