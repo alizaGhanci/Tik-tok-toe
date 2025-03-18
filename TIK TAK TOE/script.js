@@ -38,6 +38,12 @@ btn.forEach((btn) => {
     let win = countwin();
 
   
+<<<<<<< HEAD
+=======
+   
+
+  
+>>>>>>> 5577de5e70b1b2f8e5968b80d3e025ec8334dbdd
     if (count === 9 && !win) {
       setTimeout(() => {
         msg.innerText = "It's a draw! Try again later";
@@ -75,7 +81,11 @@ let showwinner = (winners) => {
       } else if (winners === "0") {
         win0++;
       }
+<<<<<<< HEAD
       else if (winners === null) {
+=======
+         else if (winners === null) {
+>>>>>>> 5577de5e70b1b2f8e5968b80d3e025ec8334dbdd
         msg.innerText = "It's a draw! Try again later";
         draw++;
       }
